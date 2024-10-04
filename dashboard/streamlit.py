@@ -10,7 +10,7 @@ import warnings
 warnings.simplefilter(action='ignore', category=FutureWarning)
 sns.set(style='dark')
 
-all_df = pd.read_csv('main_data.csv')
+all_df = pd.read_csv('dashboard/main_data.csv')
 
 datetime_columns = ['order_purchase_timestamp', 'order_approved_at', 'order_delivered_carrier_date', 'review_answer_timestamp', 'order_purchase_date']
 for column in datetime_columns:
