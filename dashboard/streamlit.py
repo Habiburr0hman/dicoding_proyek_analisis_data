@@ -62,7 +62,7 @@ def create_rfm_df(df):
 min_date = all_df['order_purchase_date'].min()
 max_date = all_df['order_purchase_date'].max()
 with st.sidebar:
-    st.image("img/olist_icon.png")
+    st.image("dashboard/img/olist_icon.png")
     start_date, end_date = st.date_input(
         label = 'Select Date Range', min_value = min_date,
         max_value = max_date,
